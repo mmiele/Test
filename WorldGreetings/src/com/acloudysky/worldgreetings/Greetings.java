@@ -14,9 +14,14 @@ import java.util.Map.Entry;
  */
 public class Greetings {
 	
-Map<String, String> table = new Hashtable<String, String>();
+	// Key value pairs collection.
+	private Map<String, String> table;
 	
+	/**
+	 * Initialize a key value pair collection as a Hashtable.
+	 */
 	public Greetings() {	
+		table = new Hashtable<String, String>();
 		table.put("Italian", "Buongiorno");
 		table.put("Spanish", "Buenos Dias");
 		table.put("English", "Good Morning");
@@ -32,7 +37,13 @@ Map<String, String> table = new Hashtable<String, String>();
 		this.table = table;
 	}
 	
-	
+	/**
+	 * 
+	 * It loops through the hashtable to obtain greetings
+	 * based on the selected language.
+	 * @param language The language to use for greetings.
+	 * @return
+	 */
 	public  String greeting(String language) {
 		String greeting = "no greeting found";
 		Iterator<Entry<String, String>> entries = table.entrySet().iterator();
