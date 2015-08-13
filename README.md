@@ -6,4 +6,5 @@ This repository contains project to use as test bed for the following purposes:
 	<li>Git repository organization</li>
 	<li>EGit operations and Eclipse integration</li>
 	<li>Sync local with remote repository</li>
+	<li>more ... </li>
 </ul>
